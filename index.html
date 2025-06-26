@@ -11,113 +11,122 @@
       background: #f5f5f5;
       color: #333;
     }
-    .main {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .menu {
+
+    .menu-container {
       max-width: 600px;
       margin: 0 auto;
       padding: 16px;
+      background: #fff;
     }
-    .menu h1 {
+
+    .main-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    .menu-content h1 {
       font-size: 24px;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
       text-align: center;
     }
+
     .menu-grid {
       display: grid;
-      /* 2열로 고정 */
       grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
+      gap: 16px;
     }
+
     .menu-item {
-      background: #fff;
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     }
+
     .menu-item img {
       width: 100%;
       display: block;
       aspect-ratio: 1/1;
       object-fit: cover;
     }
+
     .menu-item .info {
-      padding: 8px;
+      padding: 12px 8px;
       text-align: center;
     }
+
     .menu-item .name {
       font-size: 16px;
       margin-bottom: 4px;
     }
+
     .menu-item .price {
       font-size: 14px;
       color: #666;
     }
+
   </style>
 </head>
 <body>
-  <div class="main">
-    <img src="https://file.aramark.kr/public/file/W6gHqXUIQU6VTwtNH_kW8w/qnips_fairground.jpg" alt="메뉴판">
-  </div>
+  
+  <div class="menu-container">
+    
+    <img class="main-image" src="https://file.aramark.kr/public/file/W6gHqXUIQU6VTwtNH_kW8w/qnips_fairground.jpg" alt="메뉴판">
+    
+    <div class="menu-content">
+      <h1>카페 메뉴</h1>
+      <div class="menu-grid">
 
-  <div class="menu">
-    <h1>카페 메뉴</h1>
-    <div class="menu-grid">
-
-      <div class="menu-item">
-        <img src="https://file.aramark.kr/public/file/hCKk_skt9U_3ccvq8WiqGg/espresso.jpg" alt="에스프레소">
-        <div class="info">
-          <p class="name">에스프레소</p>
-          <p class="price">₩3,500</p>
+        <div class="menu-item">
+          <img src="https://file.aramark.kr/public/file/hCKk_skt9U_3ccvq8WiqGg/espresso.jpg" alt="에스프레소">
+          <div class="info">
+            <p class="name">에스프레소</p>
+            <p class="price">₩3,500</p>
+          </div>
         </div>
-      </div>
 
-      <div class="menu-item">
-        <img src="https://file.aramark.kr/public/file/DW1PKy3MOk2L3AGrOHsvnw/americano.jpg" alt="아메리카노">
-        <div class="info">
-          <p class="name">아메리카노</p>
-          <p class="price">₩4,000</p>
+        <div class="menu-item">
+          <img src="https://file.aramark.kr/public/file/DW1PKy3MOk2L3AGrOHsvnw/americano.jpg" alt="아메리카노">
+          <div class="info">
+            <p class="name">아메리카노</p>
+            <p class="price">₩4,000</p>
+          </div>
         </div>
-      </div>
 
-      <div class="menu-item">
-        <img src="https://file.aramark.kr/public/file/JugdBX7yGEiyejSuv4wGmA/latte.jpg" alt="카페라떼">
-        <div class="info">
-          <p class="name">카페라떼</p>
-          <p class="price">₩4,500</p>
+        <div class="menu-item">
+          <img src="https://file.aramark.kr/public/file/JugdBX7yGEiyejSuv4wGmA/latte.jpg" alt="카페라떼">
+          <div class="info">
+            <p class="name">카페라떼</p>
+            <p class="price">₩4,500</p>
+          </div>
         </div>
-      </div>
 
-      <div class="menu-item">
-        <img src="https://file.aramark.kr/public/file/Lq-AUz8swEqFgPcN91tMLg/affogato.jpg" alt="아포가토">
-        <div class="info">
-          <p class="name">아포가토</p>
-          <p class="price">₩5,000</p>
+        <div class="menu-item">
+          <img src="https://file.aramark.kr/public/file/Lq-AUz8swEqFgPcN91tMLg/affogato.jpg" alt="아포가토">
+          <div class="info">
+            <p class="name">아포가토</p>
+            <p class="price">₩5,000</p>
+          </div>
         </div>
-      </div>
 
-      <div class="menu-item">
-        <img src="https://file.aramark.kr/public/file/BwklEtziLki_mPdvfcjRzA/bergamot.jpg" alt="베르가못">
-        <div class="info">
-          <p class="name">베르가못</p>
-          <p class="price">₩4,500</p>
+        <div class="menu-item">
+          <img src="https://file.aramark.kr/public/file/BwklEtziLki_mPdvfcjRzA/bergamot.jpg" alt="베르가못">
+          <div class="info">
+            <p class="name">베르가못</p>
+            <p class="price">₩4,500</p>
+          </div>
         </div>
-      </div>
 
-      <div class="menu-item">
-        <img src="https://file.aramark.kr/public/file/UifpGk-qPUuL5EyV0YQq3w/blueberry_fizz2.jpg" alt="블루베리 피즈">
-        <div class="info">
-          <p class="name">블루베리 피즈</p>
-          <p class="price">₩4,500</p>
+        <div class="menu-item">
+          <img src="https://file.aramark.kr/public/file/UifpGk-qPUuL5EyV0YQq3w/blueberry_fizz2.jpg" alt="블루베리 피즈">
+          <div class="info">
+            <p class="name">블루베리 피즈</p>
+            <p class="price">₩4,500</p>
+          </div>
         </div>
+
       </div>
-
-      <!-- 이하 30개 항목까지 같은 구조로 반복 -->
-
     </div>
   </div>
 
